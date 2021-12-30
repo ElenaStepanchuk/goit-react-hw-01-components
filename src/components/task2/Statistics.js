@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import css from '../task2/';
+import css from '../task2/Statistics.module.css';
+import { getRandomColor } from '../../helpers/getRandomColor';
 
 export default function Statistics({title, stats}) {
   return (
@@ -8,7 +9,10 @@ export default function Statistics({title, stats}) {
 
       <ul className={css.statList}>
         {stats.map((stat) => {
-          return (<li key={stat.id} className={css.item}>
+          return (<li key={stat.id} className={css.item}
+          style={{
+            backgroundColor: getRandomColor(),
+          }}>
             <span className={css.label}>{stat.label}</span>
             <span className={css.percentage}>{stat.percentage}%</span>
           </li>)
