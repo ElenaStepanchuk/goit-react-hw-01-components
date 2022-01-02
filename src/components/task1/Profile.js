@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import defaultPhoto from '../task1/default-photo.png';
 import css from '../task1/Profile.module.css';
-
 export default function Profile({ username, tag, location, avatar, stats }) {
      return (
        <div className={css.profile}>

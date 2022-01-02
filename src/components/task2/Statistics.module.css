@@ -1,12 +1,10 @@
 .statistics {
-  width: 220px;
+  width: 450px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
   padding-top: 0;
-  border-width: 3px;
-  border-style: solid;
-  border-color: rgb(203, 203, 203);
+  border: 1px solid rgb(203, 203, 203);
   background-color: rgb(211, 231, 255);
 }
 .title {
@@ -25,8 +23,18 @@
 .item {
   display: flex;
   flex-wrap: wrap;
-  width: 44px;
   padding: 5px;
   justify-content: center;
   list-style-type: none;
+}
+.label,
+.percentage {
+  width: 44px;
+  text-align: center;
+}
+.label {
+  padding-top: 5px;
+}
+.percentage {
+  padding-bottom: 5px;
 }
