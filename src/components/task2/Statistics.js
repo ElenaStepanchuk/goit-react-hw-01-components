@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import css from '../task2/Statistics.module.css';
 import { getRandomColor } from '../../helpers/getRandomColor';
-
 export default function Statistics({title, stats}) {
   return (
     <section className={css.statistics}>
@@ -22,7 +21,6 @@ export default function Statistics({title, stats}) {
     </section >
   );
 }
-
 Statistics.propTypes = {
   title: PropTypes.string,
   ststs: PropTypes.arrayOf(PropTypes.shape({
