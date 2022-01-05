@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import css from '../task3/FriendList.module.css';
-let item = 0;
 export default function FriendList({friends}) {
     return (
         <ul className={css.friendList}>
@@ -22,3 +21,6 @@ FriendList.propTypes = {
         name: PropTypes.string.isRequired,
   }),),
 }
+// isOnline
+//     ? statusSpanClasses.push(css.online)
+//     : statusSpanClasses.push(css.offline);
